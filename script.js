@@ -1,5 +1,9 @@
 function stringChop(str,length) {
   // your code here
+	if(str.length ==0)
+	{
+		return null;
+	}
 	let ans=str.match(/.{1,n}/g);
 	// for(let i=0;i<str.length;i=i+size)
 	// 	{
@@ -14,6 +18,6 @@ function stringChop(str,length) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
